@@ -75,7 +75,7 @@ class GazeTracker(VideoTransformerBase):
 
 ctx = webrtc_streamer(
     key="gaze-tracker",
-    video_transformer_factory=GazeTracker,
+   video_processor_factory=GazeTracker,
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True
 )
